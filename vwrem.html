@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 9.25925925925918vw;
+            /*
+               100 * (414 / 1080)  = 38.33333333333333;
+               1vw =414/100 = 4.14vw;
+               38.333333333333/4.14 = 9.25925925925918
+            */
+        }
+
+
+        @media screen and (min-width:750){
+            html{
+                font-size:9.25925925925918*(750/100);
+                /*69.445px*/
+            }
+        }
+        *{
+            margin:0;
+        }
+        .box{
+            width:10.80rem;
+            height:10.80rem;
+            background:#ddd;
+        }
+        .innerBox{
+            width:2.7rem;
+            height:2.7rem;
+            float:left;
+            background:#ddf;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="innerBox"></div>
+        <div class="innerBox"></div>
+        <div class="innerBox"></div>
+        <div class="innerBox"></div>
+    </div>
+</body>
+</html>

@@ -5,9 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        body{
+            -webkit-touch-callout:none;
+            -webkit-user-select:none;
+            -webkit-text-size-adjust:100%;
+        }
+        .box{
+            width:750px;
+            height:50px;
+            background:green;
+        }
+        a,input,button{
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        button,input{
+            -webkit-appearance: none;
+            border-radius:0;
+        }
+    </style>
 </head>
 <body>
-        https://mtj.baidu.com/data/mobile/device     about device
-        https://www.sven.de/dpi/  about dpi
+        <h1>ios</h1>
+        <p>默认中文字体是 heiti Sc</p>
+        <p>默认英文字体是helvetica</p>
+        <p>默认数字字体是helveticaNeue</p>
+        <p>无微软雅黑</p>
+        <h1>android</h1>
+        <p>默认中文字体是Droidsansfallback</p>
+        <p>默认英文字体是Droid Sans</p>
+        <p>无微软雅黑</p>
+    <div class="box">sadfdsafs</div>
+    <button>submit</button>
+    <script>
+        const margin = Math.sqrt(Math.pow(1080,2)+Math.pow(1920,2));
+        // console.log(margin);  
+        // console.log(margin/401);   //屏幕尺寸
+        // console.log(margin/5.5);   //ppi
+        // console.log(window.devicePixelRatio);
+
+        var cWidth = document.documentElement.clientWidth;
+        console.log(cWidth)
+
+
+    </script>
 </body>
 </html>

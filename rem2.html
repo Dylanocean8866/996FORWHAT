@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        (function(doc,win,designWidth){
+            const html = doc.documentElement;
+            const refreshRem = () =>{
+                const clientWidth =  html.clientWidth;
+                if(clientWidth >= designWidth){
+                    html.style.fontSize = '100px';
+                }else{
+                    // html.style.fontSize = 16 *clientWidth / 375 + 'px';
+                    /*
+                        16 * clientWidth / 375
+                        => clientWidth / 375 * 16
+                        => clientWidth / (375 / 16)
+                    */ 
+                    html.style.fontSize = 100 * (clientWidth / designWidth) + 'px';
+                    console.log(html.style.fontSize)
+                }
+            }
+            doc.addEventListener('DOMContentLoaded',refreshRem)
+        }(document,window,750))
+    </script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            width:1.87rem;
+            height:1.87rem;
+            background:blue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+</body>
+</html>

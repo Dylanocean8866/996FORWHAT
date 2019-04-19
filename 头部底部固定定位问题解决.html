@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+            页面有input框的情况下， position：fixed  失效
+            scroll除去nav，footer其他内容放scroll中
+        */
+
+        #scroll{
+            overflow: auto;
+            position:absolute;
+            top:calc(176px / 3);
+            bottom:60px;
+            max-width: 750px;
+            -webkit-overflow-scrolling:touch;
+        }
+        #footer{
+            position:absolute;
+            width:100%;
+            max-width: 750px;
+            bottom:0px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,2 +1,6 @@
 https://mtj.baidu.com/data/mobile/device     about device
 https://www.sven.de/dpi/  about dpi
+https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
+http://material.io/tools/devices/
+http://screensiz.es/phone
+https://github.com/imochen/hotcss

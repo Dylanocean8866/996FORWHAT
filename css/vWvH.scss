@@ -1,0 +1,28 @@
+@function vw($px){
+    @return $px / 750 * 100vw
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+ul{
+    li{
+        width: vw(187.5);
+        height: vw(187.5);
+        background:#efe;
+        float:left;
+    }
+}
+.listBox::after{
+    content:"";
+    display:block;
+    clear: both;
+}
+.box{
+    width:vw(200);
+    height:vw(200);
+    background:#eaf;
+}
